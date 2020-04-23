@@ -22,7 +22,7 @@ public class LoginDatabaseHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("drop table if exists user");
     }
-
+    //inserting in database
     public boolean insert(String email, String password) {
         ContentValues contentValues = new ContentValues();
         contentValues.put("email", email);

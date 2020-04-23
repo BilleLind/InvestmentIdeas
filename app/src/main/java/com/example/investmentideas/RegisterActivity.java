@@ -18,6 +18,7 @@ public class RegisterActivity extends AppCompatActivity {
     public void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registeractivity);
+        db = new LoginDatabaseHelper(this);
         e1 = findViewById(R.id.remail);
         e2 = findViewById(R.id.rpassword);
         e3 = findViewById(R.id.rcpassword);
@@ -42,7 +43,7 @@ public class RegisterActivity extends AppCompatActivity {
                             }
                         }
                         else {
-                            Toast.makeText(getApplicationContext(), "Mail is already registered", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "Email is already registered", Toast.LENGTH_SHORT).show();
                         }
                     } else {
                         Toast.makeText(getApplicationContext(), "Password do not match", Toast.LENGTH_SHORT).show();
