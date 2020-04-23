@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light">
+    <TextView
+        android:id="@+id/text"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:layout_marginTop="50dp"
+        android:text="InvestmentIdeas"
+        android:layout_centerHorizontal="true"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_marginTop="70dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:hint="Email:"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Password:"
+        >
+    </EditText>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        style="@android:style/TextAppearance.Holo.Small"
+        >
+    </Button>
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/login"
+        android:clickable="true"
+        android:onClick="onRegisterClick"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        >
+    </TextView>
+
+</RelativeLayout>

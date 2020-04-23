@@ -37,7 +37,7 @@ public class LoginDatabaseHelper extends SQLiteOpenHelper {
 
 
     // method checks if the mail already exists in the database
-    private boolean checkMail(String email) {
+    public boolean checkMail(String email) {
         Cursor cursor = db.rawQuery("Select * from user where email=?", new String[]{email});
         if (cursor.getCount() > 0) {
             return false;
@@ -47,7 +47,7 @@ public class LoginDatabaseHelper extends SQLiteOpenHelper {
     }
 
     // method checks if password and email matches
-    private boolean checkMailPass(String email, String password) {
+    public boolean checkMailPass(String email, String password) {
         Cursor cursor = db.rawQuery("select * from user where email=? and password=?", new String[]{email, password});
         if (cursor.getCount() > 0) {
             return true;
