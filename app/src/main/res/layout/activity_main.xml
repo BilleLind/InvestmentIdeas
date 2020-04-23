@@ -27,6 +27,7 @@
                 android:layout_marginRight="40dp"
                 android:layout_marginBottom="51dp"
                 android:text="@string/topstock"
+                style="@style/rounded_corners"
                 />
 
             <Button
@@ -38,6 +39,7 @@
                 android:layout_marginEnd="40dp"
                 android:layout_marginRight="40dp"
                 android:text="@string/explorer"
+                style="@style/rounded_corners"
                 />
 
             <LinearLayout
@@ -57,6 +59,7 @@
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
+                        style="@style/rounded_corners"
                         />
 
                     <Button
@@ -66,6 +69,7 @@
                         android:layout_marginTop="30dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
+                        style="@style/rounded_corners"
                         />
                 </LinearLayout>
 
@@ -81,6 +85,7 @@
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
+                        style="@style/rounded_corners"
                         />
 
                     <Button
@@ -90,6 +95,7 @@
                         android:layout_marginTop="30dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
+                        style="@style/rounded_corners"
                         />
                 </LinearLayout>
 
@@ -105,6 +111,7 @@
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
+                        style="@style/rounded_corners"
                         />
 
                     <Button
@@ -114,6 +121,82 @@
                         android:layout_marginTop="30dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
+                        style="@style/rounded_corners"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/topStocks7"
+                        android:layout_width="145dp"
+                        android:layout_height="87dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:text="Button"
+                        style="@style/rounded_corners"
+                        />
+
+                    <Button
+                        android:id="@+id/topStocks8"
+                        android:layout_width="145dp"
+                        android:layout_height="87dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="40dp"
+                        android:text="Button"
+                        style="@style/rounded_corners"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/topStocks9"
+                        android:layout_width="145dp"
+                        android:layout_height="87dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:text="Button"
+                        style="@style/rounded_corners"
+                        />
+
+                    <Button
+                        android:id="@+id/topStocks10"
+                        android:layout_width="145dp"
+                        android:layout_height="87dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="40dp"
+                        android:text="Button"
+                        style="@style/rounded_corners"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/topStocks11"
+                        android:layout_width="145dp"
+                        android:layout_height="87dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:text="Button"
+                        style="@style/rounded_corners"
+                        />
+
+                    <Button
+                        android:id="@+id/topStocks12"
+                        android:layout_width="145dp"
+                        android:layout_height="87dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="40dp"
+                        android:text="Button"
+                        style="@style/rounded_corners"
                         />
                 </LinearLayout>
             </LinearLayout>
