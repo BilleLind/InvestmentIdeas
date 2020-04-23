@@ -23,7 +23,7 @@ public class LoginDatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("drop table if exists user");
     }
 
-    private boolean insert(String email, String password) {
+    public boolean insert(String email, String password) {
         ContentValues contentValues = new ContentValues();
         contentValues.put("email", email);
         contentValues.put("password", password);
