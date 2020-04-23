@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">InvestmentIdeas</string>
+    <string name="topstock">Top Stocks</string>
+    <string name="explorer">Explore opportunities</string>
 </resources>
