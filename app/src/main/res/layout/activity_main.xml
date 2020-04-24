@@ -28,7 +28,6 @@
                 android:layout_marginBottom="51dp"
                 android:text="@string/topstock"
                 android:onClick="onClick"
-                style="@style/rounded_corners"
                 >
             </Button>
 
@@ -41,7 +40,6 @@
                 android:layout_marginEnd="40dp"
                 android:layout_marginRight="40dp"
                 android:text="@string/explorer"
-                style="@style/rounded_corners"
                 />
 
             <LinearLayout
@@ -54,24 +52,22 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
                     <Button
-                        android:id="@+id/topStocks1"
+                        android:id="@+id/sector1"
                         android:layout_width="145dp"
                         android:layout_height="87dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
 
                     <Button
-                        android:id="@+id/topStocks2"
+                        android:id="@+id/sector2"
                         android:layout_width="145dp"
                         android:layout_height="87dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
                 </LinearLayout>
 
@@ -80,24 +76,22 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
                     <Button
-                        android:id="@+id/topStocks3"
+                        android:id="@+id/sector3"
                         android:layout_width="145dp"
                         android:layout_height="87dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
 
                     <Button
-                        android:id="@+id/topStocks4"
+                        android:id="@+id/sector4"
                         android:layout_width="145dp"
                         android:layout_height="87dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
                 </LinearLayout>
 
@@ -106,24 +100,22 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
                     <Button
-                        android:id="@+id/topStocks5"
+                        android:id="@+id/sector5"
                         android:layout_width="145dp"
                         android:layout_height="87dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
 
                     <Button
-                        android:id="@+id/topStocks6"
+                        android:id="@+id/sector6"
                         android:layout_width="145dp"
                         android:layout_height="87dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -131,24 +123,22 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
                     <Button
-                        android:id="@+id/topStocks7"
+                        android:id="@+id/sector7"
                         android:layout_width="145dp"
                         android:layout_height="87dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
 
                     <Button
-                        android:id="@+id/topStocks8"
+                        android:id="@+id/sector8"
                         android:layout_width="145dp"
                         android:layout_height="87dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -156,24 +146,22 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
                     <Button
-                        android:id="@+id/topStocks9"
+                        android:id="@+id/sector9"
                         android:layout_width="145dp"
                         android:layout_height="87dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
 
                     <Button
-                        android:id="@+id/topStocks10"
+                        android:id="@+id/sector10"
                         android:layout_width="145dp"
                         android:layout_height="87dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -181,24 +169,22 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
                     <Button
-                        android:id="@+id/topStocks11"
+                        android:id="@+id/sector11"
                         android:layout_width="145dp"
                         android:layout_height="87dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
 
                     <Button
-                        android:id="@+id/topStocks12"
+                        android:id="@+id/sector12"
                         android:layout_width="145dp"
                         android:layout_height="87dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
                 </LinearLayout>
             </LinearLayout>
