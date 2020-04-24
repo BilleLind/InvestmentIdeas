@@ -4,4 +4,23 @@
     <string name="explorer">Explore opportunities</string>
     <string name="textview">TextView</string>
     <string name="overview">Overview</string>
+    <string name="ticker_code">Ticker code</string>
+    <string name="company_name">Company Name</string>
+    <string name="sector">Sector</string>
+    <string name="sub_sector">Sub Sector</string>
+    <string name="year">Year:</string>
+    <string name="revenue">revenue:</string>
+    <string name="net_income">net inc.:</string>
+    <string name="_2016">2016</string>
+    <string name="rev2016">rev2016</string>
+    <string name="net2016">net2016</string>
+    <string name="_2017">2017</string>
+    <string name="rev2017">rev2017</string>
+    <string name="net2017">net2017</string>
+    <string name="_2018">2018</string>
+    <string name="rev2018">rev2018</string>
+    <string name="net2018">net2018</string>
+    <string name="_2019">2019</string>
+    <string name="rev2019">rev2019</string>
+    <string name="net2019">net2019</string>
 </resources>

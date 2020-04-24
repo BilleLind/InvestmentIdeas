@@ -1,26 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-
+<LinearLayout   xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-
-    <View
-        android:layout_above="@+id/ExploreOverview"
-        android:id="@+id/divider"
-        android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:background="?android:attr/listDivider" />
 
     <TextView
         android:id="@+id/ExploreOverview"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="100dp"
         android:text="@string/overview"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
+
         />
 
     <View
@@ -28,6 +18,302 @@
         android:id="@+id/divider2"
         android:layout_width="match_parent"
         android:layout_height="3dp"
-        android:background="?android:attr/listDivider" />
+        android:background="#00000a" />
 
-</RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/divider2">
+        <TextView
+            android:id="@+id/tickerExplore"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="@string/ticker_code"
+            style="@style/forText" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="#00000a" />
+
+        <TextView
+            android:id="@+id/nameExplore"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="@string/company_name"
+            style="@style/forText"
+            />
+    </LinearLayout>
+    <View
+        android:layout_alignBottom="@+id/linear1"
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#00000a" />
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/divider3">
+        <TextView
+            android:id="@+id/SectorExplore"
+            android:layout_width="match_parent"
+
+            android:layout_weight="1"
+            android:text="@string/sector"
+            style="@style/forText"
+            />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="#00000a" />
+
+        <TextView
+            android:id="@+id/SubSectorExplore"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="@string/sub_sector"
+            style="@style/forText"
+            />
+    </LinearLayout>
+    <View
+        android:layout_alignBottom="@+id/linear2"
+        android:id="@+id/divider6"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#00000a"/>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearYearResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/divider6">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                style="@style/forText"
+                android:text="@string/year"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#00000a" />
+            <TextView
+                android:layout_width="wrap_content"
+                style="@style/forText"
+                android:text="@string/revenue" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#00000a" />
+            <TextView
+                android:layout_width="wrap_content"
+                style="@style/forText"
+                android:text="@string/net_income"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#00000a" />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#00000a" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/forText"
+                android:text="@string/_2016"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#00000a" />
+            <TextView
+                android:id="@+id/revenue2016Explore"
+                android:layout_width="match_parent"
+                style="@style/forText"
+                android:text="@string/rev2016"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#00000a" />
+            <TextView
+                android:id="@+id/netIncome2016Explore"
+                android:layout_width="match_parent"
+                style="@style/forText"
+                android:text="@string/net2016"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#00000a" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#00000a" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/forText"
+                android:text="@string/_2017"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#00000a" />
+            <TextView
+                android:id="@+id/revenue2017Explore"
+                android:layout_width="match_parent"
+                style="@style/forText"
+                android:text="@string/rev2017"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#00000a" />
+
+            <TextView
+                android:id="@+id/netIncome2017Explore"
+                android:layout_width="match_parent"
+                style="@style/forText"
+                android:text="@string/net2017"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#00000a" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#00000a" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/forText"
+                android:text="@string/_2018"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#00000a" />
+            <TextView
+                android:id="@+id/revenue2018Explore"
+                android:layout_width="match_parent"
+                style="@style/forText"
+                android:text="@string/rev2018"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#00000a" />
+
+            <TextView
+                android:id="@+id/netIncome2018Explore"
+                android:layout_width="match_parent"
+                style="@style/forText"
+                android:text="@string/net2018"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#00000a" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#00000a" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/forText"
+                android:text="@string/_2019"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#00000a" />
+
+            <TextView
+                android:id="@+id/revenue2019Explore"
+                android:layout_width="match_parent"
+                style="@style/forText"
+                android:text="@string/rev2019"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#00000a" />
+
+            <TextView
+                android:id="@+id/netIncome2019Explore"
+                android:layout_width="match_parent"
+                style="@style/forText"
+                android:text="@string/net2019"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#00000a" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
