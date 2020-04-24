@@ -1,5 +1,6 @@
 package com.example.investmentideas;
 
+import android.app.Activity;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 
@@ -7,13 +8,15 @@ public class SwipeFeature extends GestureDetector.SimpleOnGestureListener {
 
 
 
-    private ExploreAcitivty activity;
 
-    public ExploreAcitivty getActivity(){
+
+    private Activity activity;
+
+    public Activity getActivity(){
         return activity;
     }
 
-    void setActivity(ExploreAcitivty activity) {
+    void setActivity(Activity activity) {
         this.activity = activity;
     }
 
@@ -29,9 +32,9 @@ public class SwipeFeature extends GestureDetector.SimpleOnGestureListener {
         int MIN_SWIPE_DISTANCE_X = 100;
         if (deltaXAbs >= MIN_SWIPE_DISTANCE_X && deltaXAbs <= MAX_SWIPE_DISTANCE_X) {
             if (deltaX > 0) {
-                this.activity.displayMessage("Swipe to left");
+                TopStockActivity.displayMessage("Swipe to left");
             } else  {
-                this.activity.displayMessage("Swipe to right");
+                TopStockActivity.displayMessage("Swipe to right");
             }
         }
 
@@ -39,15 +42,16 @@ public class SwipeFeature extends GestureDetector.SimpleOnGestureListener {
         int MIN_SWIPE_DISTANCE_Y = 100;
         if (deltaYAbs >= MIN_SWIPE_DISTANCE_Y && deltaYAbs <= MAX_SWIPE_DISTANCE_Y) {
             if (deltaY > 0) {
-                this.activity.displayMessage("Swipe to up");
+                TopStockActivity.displayMessage("Swipe to up");
             } else  {
-                this.activity.displayMessage("Swipe to down");
+                TopStockActivity.displayMessage("Swipe to down");
             }
         }
 
         return true;
     }
 
+    /*
     @Override
     public boolean onSingleTapConfirmed(MotionEvent e) {
         this.activity.displayMessage("singe tap");
@@ -58,6 +62,6 @@ public class SwipeFeature extends GestureDetector.SimpleOnGestureListener {
     public boolean onDoubleTap(MotionEvent e) {
         this.activity.displayMessage("Double tap");
         return true;
-    }
+    } */
 
 }

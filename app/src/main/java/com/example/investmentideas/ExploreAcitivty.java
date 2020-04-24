@@ -1,5 +1,6 @@
 package com.example.investmentideas;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
@@ -10,7 +11,8 @@ import androidx.core.view.GestureDetectorCompat;
 
 public class ExploreAcitivty extends AppCompatActivity{
 
-    TextView textView;
+    @SuppressLint("StaticFieldLeak")
+    static TextView exploreTextview;
 
     private GestureDetectorCompat gestureDetectorCompat = null;
 
@@ -19,7 +21,7 @@ public class ExploreAcitivty extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.exploreactivity);
 
-        textView = findViewById(R.id.textView2);
+        exploreTextview = findViewById(R.id.ExploreOverview);
 
         SwipeFeature swipeFeature = new SwipeFeature();
         swipeFeature.setActivity(this);
@@ -33,7 +35,7 @@ public class ExploreAcitivty extends AppCompatActivity{
     }
 
     public void displayMessage(String message) {
-        textView.setText(message);
+        exploreTextview.setText(message);
     }
 
 
