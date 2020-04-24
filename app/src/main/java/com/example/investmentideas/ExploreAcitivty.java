@@ -34,7 +34,7 @@ public class ExploreAcitivty extends AppCompatActivity{
         return true;
     }
 
-    public void displayMessage(String message) {
+    public static void displayMessage(String message) {
         exploreTextview.setText(message);
     }
 
