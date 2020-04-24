@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/rtext"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:layout_marginTop="50dp"
+        android:text="Register"
+        android:layout_centerHorizontal="true"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/remail"
+        android:layout_marginTop="70dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rtext"
+        android:layout_centerHorizontal="true"
+        android:hint="Email:"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/rpassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remail"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Password:"
+        android:inputType="textPassword"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/rcpassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rpassword"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Re-enter Password:"
+        android:inputType="textPassword"
+        >
+    </EditText>
+
+    <Button
+        android:id="@+id/rregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rcpassword"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        style="@android:style/TextAppearance.Holo.Small"
+        >
+    </Button>
+
+
+</RelativeLayout>
