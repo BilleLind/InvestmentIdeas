@@ -30,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
                 boolean checkMailPass = db.checkMailPass(email, password);
                 if (checkMailPass) {
                     Toast.makeText(getApplicationContext(), "Login Succesfull", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
                 } else {
                     Toast.makeText(getApplicationContext(), "Wrong email or password", Toast.LENGTH_SHORT).show();
                 }
