@@ -27,7 +27,6 @@
                 android:layout_marginRight="40dp"
                 android:layout_marginBottom="51dp"
                 android:text="@string/topstock"
-                style="@style/rounded_corners"
                 />
 
             <Button
@@ -39,7 +38,6 @@
                 android:layout_marginEnd="40dp"
                 android:layout_marginRight="40dp"
                 android:text="@string/explorer"
-                style="@style/rounded_corners"
                 />
 
             <LinearLayout
@@ -59,7 +57,6 @@
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
 
                     <Button
@@ -69,7 +66,6 @@
                         android:layout_marginTop="30dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
                 </LinearLayout>
 
@@ -85,7 +81,6 @@
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
 
                     <Button
@@ -95,7 +90,6 @@
                         android:layout_marginTop="30dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
                 </LinearLayout>
 
@@ -111,7 +105,6 @@
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
 
                     <Button
@@ -121,7 +114,6 @@
                         android:layout_marginTop="30dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -136,7 +128,6 @@
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
 
                     <Button
@@ -146,7 +137,6 @@
                         android:layout_marginTop="30dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -161,7 +151,6 @@
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
 
                     <Button
@@ -171,7 +160,6 @@
                         android:layout_marginTop="30dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -186,7 +174,6 @@
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
 
                     <Button
@@ -196,7 +183,6 @@
                         android:layout_marginTop="30dp"
                         android:layout_marginRight="40dp"
                         android:text="Button"
-                        style="@style/rounded_corners"
                         />
                 </LinearLayout>
             </LinearLayout>
