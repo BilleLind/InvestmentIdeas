@@ -14,11 +14,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void onTopStockClick(View v) {
+    public void onClick(View v) {
         startActivity(new Intent(MainActivity.this, TopStockActivity.class));
     }
 
-    public void onExploreClick(View v) {
-        startActivity(new Intent(MainActivity.this, ExploreAcitivty.class));
-    }
 }
