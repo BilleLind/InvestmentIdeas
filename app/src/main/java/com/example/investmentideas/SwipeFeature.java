@@ -45,6 +45,7 @@ public class SwipeFeature extends GestureDetector.SimpleOnGestureListener {
                 }
             } else {
                 if (currentClass.equals(explorere)) {
+                    StockSelector.select();
                     ExploreAcitivty.displayMessage("Swipe to right");
                 }
 
