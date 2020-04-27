@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,11 +22,12 @@ public class ExploreAcitivty extends AppCompatActivity{
     static TextView rev16Ex;
     static TextView rev17Ex;
     static TextView rev18Ex;
-    static TextView rec19Ex;
+    static TextView rev19Ex;
     static TextView net16Ex;
     static TextView net17Ex;
     static TextView net18Ex;
     static TextView net19Ex;
+    static ImageView imageExplore;
 
     private GestureDetectorCompat gestureDetectorCompat = null;
 
@@ -38,6 +40,17 @@ public class ExploreAcitivty extends AppCompatActivity{
         exploreTextview = findViewById(R.id.ExploreOverview);
         tickerExplore = findViewById(R.id.tickerExplore);
         companyNameEx = findViewById(R.id.nameExplore);
+        sectorExplore = findViewById(R.id.SectorExplore);
+        subSectorExplore = findViewById(R.id.SubSectorExplore);
+        rev16Ex = findViewById(R.id.revenue2016Explore);
+        rev17Ex = findViewById(R.id.revenue2017Explore);
+        rev18Ex = findViewById(R.id.revenue2018Explore);
+        rev19Ex = findViewById(R.id.revenue2019Explore);
+        net16Ex = findViewById(R.id.netIncome2016Explore);
+        net17Ex = findViewById(R.id.netIncome2017Explore);
+        net18Ex = findViewById(R.id.netIncome2018Explore);
+        net19Ex = findViewById(R.id.netIncome2019Explore);
+        imageExplore = findViewById(R.id.imageExplore);
 
         SwipeFeature swipeFeature = new SwipeFeature();
         swipeFeature.setActivity(this);
