@@ -25,9 +25,9 @@ public class TopStockActivity extends AppCompatActivity {
         textView = findViewById(R.id.nameTextView);
 
     SwipeFeature swipeFeature = new SwipeFeature();
-        swipeFeature.setActivity(this);
+    swipeFeature.setActivity(this);
     gestureDetectorCompat = new GestureDetectorCompat(this, swipeFeature);
-}
+    }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
