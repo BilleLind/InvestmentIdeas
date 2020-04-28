@@ -8,17 +8,22 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
 
 public class LoginActivity extends AppCompatActivity {
+
     LoginDatabaseHelper db;
     EditText e1, e2;
     Button login;
+    public static MyStockDatabase myStockDatabase;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.loginactivity);
         db = new LoginDatabaseHelper(this);
+        myStockDatabase = Room.databaseBuilder(getApplicationContext(), MyStockDatabase.class, "stocks").build();
+
         e1 = findViewById(R.id.email);
         e2 = findViewById(R.id.password);
         login = findViewById(R.id.login);
