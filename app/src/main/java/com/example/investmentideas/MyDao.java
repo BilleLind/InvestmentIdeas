@@ -11,7 +11,7 @@ public interface MyDao {
     public void addStock(Stock stock);
 
     @Query("SELECT * FROM stocks WHERE stockName LIKE :stockName")
-    public Stock[] findByName(String stockName);
+    public Stock findByName(String stockName);
 
 
 }
