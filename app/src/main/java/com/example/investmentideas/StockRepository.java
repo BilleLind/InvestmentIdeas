@@ -20,11 +20,12 @@ public class StockRepository {
     //public void insertTask(String companyName, String overview, String sector, String subSector, String tickerCode, int year, int revenue, int netIncome ) {
      //   insertTask(companyName, overview, sector, subSector, tickerCode, year, revenue, netIncome); }
     public void  insertTask(String companyName, String overview) {
-        Stock stock = new Stock();
-        stock.setCompanyName(companyName);
+       Stock stock = new Stock();
+       stock.setCompanyName(companyName);
         stock.setOverview(overview);
     }
-    public void insertTask(String companyName, String overview, String sector, String subSector, String tickerCode, int year, int revenue, int netIncome) {
+
+   /* public void insertTask(String companyName, String overview, String sector, String subSector, String tickerCode, int year, int revenue, int netIncome) {
         Stock stock = new Stock();
         stock.setCompanyName(companyName);
         stock.setOverview(overview);
@@ -34,7 +35,7 @@ public class StockRepository {
         stock.setYear(year);
         stock.setRevenue(revenue);
         stock.setNetIncome(netIncome);
-    }
+    } */
 
     public void insertTask(final Stock stock) {
         new AsyncTask<Void, Void, Void>() {

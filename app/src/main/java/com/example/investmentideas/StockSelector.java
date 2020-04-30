@@ -1,13 +1,14 @@
 package com.example.investmentideas;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.widget.ImageView;
 
 import androidx.annotation.DrawableRes;
 
-public class StockSelector extends ExploreAcitivty{
+public class StockSelector {
 //        ImageView imageView = findViewById(R.id.imageExplore);
 
 
@@ -23,10 +24,7 @@ public class StockSelector extends ExploreAcitivty{
         //    int i = 0; }
 
 
-        StockRepository stockRepository = new StockRepository(getApplicationContext());
-        String companyName = "Microsoft";
-        String overview = "Hello does this compute?";
-        stockRepository.insertTask(companyName ,overview);
-
     }
+
+
 }

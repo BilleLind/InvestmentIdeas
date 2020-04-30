@@ -62,8 +62,12 @@ public class ExploreAcitivty extends AppCompatActivity{
         gestureDetectorCompat.onTouchEvent(event);
         return true; }
 
-    public static void displayMessage(String message) {
-        exploreTextview.setText(message); }
+    public void displayMessage() {
+        StockRepository stockRepository = new StockRepository(getApplicationContext());
+        String companyName = "Microsoft";
+        String overview = "Hello does this compute?";
+        stockRepository.insertTask(companyName ,overview); }
+
 
 
 
