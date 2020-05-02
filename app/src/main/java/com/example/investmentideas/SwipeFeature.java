@@ -1,14 +1,22 @@
 package com.example.investmentideas;
 
 import android.app.Activity;
+import android.content.Context;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
+
+import androidx.annotation.Nullable;
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.Observer;
+
+import java.util.List;
 
 public class SwipeFeature extends GestureDetector.SimpleOnGestureListener {
 
 
     private Activity activity;
-
     public Activity getActivity() {
         return activity;
     }
@@ -36,19 +44,19 @@ public class SwipeFeature extends GestureDetector.SimpleOnGestureListener {
             if (deltaX > 0) { // this is left
                 //TODO make method for going through every stock
                 if (currentClass.equals(explorere)) {
+                    ExploreAcitivty exploreAcitivty = new ExploreAcitivty();
+                    exploreAcitivty.displayMessage();
 
-                    //method for ExploreAcitivty
+
                 }
                 if (currentClass.equals(topStocky)) {
                     //method for TopstopActivity
                     TopStockActivity.displayMessage(currentClass + "Works");
                 }
-            } else {
+            } else { // this is right
                 if (currentClass.equals(explorere)) {
-                   // StockSelector stockSelector = new StockSelector();
-                    //stockSelector.select();
-                    ExploreAcitivty exploreAcitivty = new ExploreAcitivty();
-                    exploreAcitivty.displayMessage();
+
+
                 }
 
                 if (currentClass.equals(topStocky)) {
@@ -57,17 +65,19 @@ public class SwipeFeature extends GestureDetector.SimpleOnGestureListener {
             }
         }
 
-        /* TODO do we need down or up? method for it here
+
         int MAX_SWIPE_DISTANCE_Y = 1000;
         int MIN_SWIPE_DISTANCE_Y = 100;
         if (deltaYAbs >= MIN_SWIPE_DISTANCE_Y && deltaYAbs <= MAX_SWIPE_DISTANCE_Y) {
             if (deltaY > 0) {
-                ExploreAcitivty.displayMessage("Swipe to up");
+                //Stock stock = stockRepository.getTask(1); this is up but not work
+
+
             } else  {
-                ExploreAcitivty.displayMessage("Swipe to down");
+                //ExploreAcitivty.displayMessage("Swipe to down");
             }
         }
-        */
+
         return true;
     }
 

@@ -17,15 +17,17 @@ public class StockRepository {
         stockDatabase = Room.databaseBuilder(context, StockDatabase.class, DB_NAME).build();
     }
 
-    //public void insertTask(String companyName, String overview, String sector, String subSector, String tickerCode, int year, int revenue, int netIncome ) {
-     //   insertTask(companyName, overview, sector, subSector, tickerCode, year, revenue, netIncome); }
+
+    //public void insertTask(String companyName, String overview) {
+        //insertTask(companyName, overview); }
+
     public void  insertTask(String companyName, String overview) {
        Stock stock = new Stock();
        stock.setCompanyName(companyName);
         stock.setOverview(overview);
     }
 
-   /* public void insertTask(String companyName, String overview, String sector, String subSector, String tickerCode, int year, int revenue, int netIncome) {
+    public void insertTask(String companyName, String overview, String sector, String subSector, String tickerCode, int year, int revenue, int netIncome) {
         Stock stock = new Stock();
         stock.setCompanyName(companyName);
         stock.setOverview(overview);
@@ -35,7 +37,8 @@ public class StockRepository {
         stock.setYear(year);
         stock.setRevenue(revenue);
         stock.setNetIncome(netIncome);
-    } */
+        insertTask(stock);
+    }
 
     public void insertTask(final Stock stock) {
         new AsyncTask<Void, Void, Void>() {
@@ -63,7 +66,6 @@ public class StockRepository {
             new AsyncTask<Void, Void, Void>() {
                 @Override
                 protected Void doInBackground(Void...voids) {
-
                     stockDatabase.daoAccess().deleteTask(task.getValue());
                     return null;
                 }

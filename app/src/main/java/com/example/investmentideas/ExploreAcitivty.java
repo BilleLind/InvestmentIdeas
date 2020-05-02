@@ -1,6 +1,8 @@
 package com.example.investmentideas;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
@@ -13,6 +15,9 @@ import androidx.core.view.GestureDetectorCompat;
 
 
 public class ExploreAcitivty extends AppCompatActivity{
+
+
+
 
     static TextView exploreTextview;
     static TextView tickerExplore;
@@ -55,6 +60,11 @@ public class ExploreAcitivty extends AppCompatActivity{
         SwipeFeature swipeFeature = new SwipeFeature();
         swipeFeature.setActivity(this);
         gestureDetectorCompat = new GestureDetectorCompat(this, swipeFeature);
+    }
+
+    @Override
+    public Context getApplicationContext() {
+        return super.getApplicationContext();
     }
 
     @Override
