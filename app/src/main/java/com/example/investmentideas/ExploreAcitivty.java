@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -65,12 +66,15 @@ public class ExploreAcitivty extends AppCompatActivity{
         ButtonStar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (isEnable){
+                if (isEnable){ //adds / yellow star
                     ButtonStar.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),android.R.drawable.btn_star_big_off));
-                    // a method for disabled it as favorite for the specific stock (mis-click?) and for resetting it at every new stock shown
-                }else{
-                    ButtonStar.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),android.R.drawable.btn_star_big_on));
+                    Toast.makeText(getApplicationContext(),"Removed from Favorite",Toast.LENGTH_SHORT).show();
                     //a method for setting it as favorite for the specific stock
+
+                }else{ // removes / blank star
+                    ButtonStar.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),android.R.drawable.btn_star_big_on));
+                    Toast.makeText(getApplicationContext(),"Added to Favorite", Toast.LENGTH_SHORT).show();
+                    // a method for disabled it as favorite for the specific stock (mis-click?) and for resetting it at every new stock shown
                 }
                 isEnable = !isEnable;
             }
