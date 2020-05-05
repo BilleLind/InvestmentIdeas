@@ -67,8 +67,10 @@ public class ExploreAcitivty extends AppCompatActivity{
             public void onClick(View view) {
                 if (isEnable){
                     ButtonStar.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),android.R.drawable.btn_star_big_off));
+                    // a method for disabled it as favorite for the specific stock (mis-click?) and for resetting it at every new stock shown
                 }else{
                     ButtonStar.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),android.R.drawable.btn_star_big_on));
+                    //a method for setting it as favorite for the specific stock
                 }
                 isEnable = !isEnable;
             }
