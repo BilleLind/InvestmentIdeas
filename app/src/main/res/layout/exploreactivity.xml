@@ -359,6 +359,12 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+        <com.github.mikephil.charting.charts.BarChart
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:id="@+id/barChartExplore"
+
+            />
 
 
     </LinearLayout>

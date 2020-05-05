@@ -15,6 +15,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.core.view.GestureDetectorCompat;
 
+import com.github.mikephil.charting.charts.BarChart;
+import com.github.mikephil.charting.data.BarData;
+import com.github.mikephil.charting.data.BarDataSet;
+import com.github.mikephil.charting.data.BarEntry;
+import com.github.mikephil.charting.formatter.IAxisValueFormatter;
+import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
+import com.github.mikephil.charting.utils.ColorTemplate;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class ExploreAcitivty extends AppCompatActivity{
@@ -36,6 +46,8 @@ public class ExploreAcitivty extends AppCompatActivity{
     static ImageView imageExplore;
 
     private GestureDetectorCompat gestureDetectorCompat = null;
+
+    BarChart barChart;
 
 
     @Override
@@ -79,7 +91,32 @@ public class ExploreAcitivty extends AppCompatActivity{
                 isEnable = !isEnable;
             }
         });
+
+        barChart = (BarChart) findViewById(R.id.barChartExplore);
+        //https://github.com/PhilJay/MPAndroidChart/wiki/Setting-Data#grouped-barchart
+
+        float[] EPS = {1, 2, 3, 4};
+        int[] NetIncome = {80, 90, 120, 160};
+        int[] revenueBar = {200,240,260,320};
+
+        List<BarEntry> entriesGroup1 = new ArrayList<>();
+        List<BarEntry> entriesGroup2 = new ArrayList<>();
+        List<BarEntry> entriesGroup3 = new ArrayList<>();
+
+        for (int i = 0; i < EPS.length; i++) {
+            entriesGroup1.add(new BarEntry(i, EPS[i]));
+            entriesGroup1.add(new BarEntry(i, NetIncome[i]));
+            entriesGroup1.add(new BarEntry(i, revenueBar[i]));
+        }
+
+        BarDataSet set1 = new BarDataSet(entriesGroup1, "EPS");
+        BarDataSet set2 = new BarDataSet(entriesGroup2, "Net Income");
+        BarDataSet set3 = new BarDataSet(entriesGroup3, "Revenue");
+
+
     }
+
+
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
