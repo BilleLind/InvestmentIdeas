@@ -4,16 +4,21 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.core.view.GestureDetectorCompat;
 
 
 
 public class ExploreAcitivty extends AppCompatActivity{
 
+    private boolean isEnable=false; // https://stackoverflow.com/questions/8244252/star-button-in-android
     static TextView exploreTextview;
     static TextView tickerExplore;
     static TextView companyNameEx;
@@ -55,6 +60,19 @@ public class ExploreAcitivty extends AppCompatActivity{
         SwipeFeature swipeFeature = new SwipeFeature();
         swipeFeature.setActivity(this);
         gestureDetectorCompat = new GestureDetectorCompat(this, swipeFeature);
+
+        final ImageButton ButtonStar = (ImageButton) findViewById(R.id.star);
+        ButtonStar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (isEnable){
+                    ButtonStar.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),android.R.drawable.btn_star_big_off));
+                }else{
+                    ButtonStar.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),android.R.drawable.btn_star_big_on));
+                }
+                isEnable = !isEnable;
+            }
+        });
     }
 
     @Override
@@ -64,10 +82,6 @@ public class ExploreAcitivty extends AppCompatActivity{
 
     public static void displayMessage(String message) {
         exploreTextview.setText(message); }
-
-
-
-
 
 
 

@@ -31,6 +31,7 @@
 </LinearLayout>
 
     <ImageView
+        android:layout_marginTop="4dp"
         android:id="@+id/imageExplore"
         android:layout_width="wrap_content"
         android:layout_height="180dp"
@@ -39,20 +40,7 @@
         android:paddingRight="10dp"
         android:paddingStart="10dp"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/note"
-
-
-        />
-
-    <TextView
-        android:id="@+id/ExploreOverview"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:text="@string/overview"
-        android:background="@drawable/customtext"
-        style="@style/margin"
-        />
-
+        android:src="@drawable/note" />
     <LinearLayout
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
@@ -63,20 +51,37 @@
         <TextView
             android:id="@+id/tickerExplore"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/ticker_code"
             style="@style/forText"
             android:background="@drawable/customtextnumbers" />
+
+        <ImageButton
+            android:id="@+id/star"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:src="@android:drawable/btn_star" />
         <TextView
             android:id="@+id/nameExplore"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/company_name"
             style="@style/forText"
             android:background="@drawable/customtextnumbers" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/ExploreOverview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="@string/overview"
+        android:background="@drawable/customtext"
+        style="@style/margin"
+        android:layout_marginBottom="8dp"
+        />
+
+
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -303,6 +308,10 @@
                 android:layout_height="3dp"
                 android:background="#00000a" />
         </LinearLayout>
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#00000a" />
 
             <LinearLayout
                 android:layout_width="match_parent"
