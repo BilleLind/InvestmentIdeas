@@ -3,6 +3,10 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
+    configurations{
+        all*.exclude module: 'okhttp'
+        all*.exclude module: 'okio'
+    }
 
     defaultConfig {
         applicationId "com.example.investmentideas"
