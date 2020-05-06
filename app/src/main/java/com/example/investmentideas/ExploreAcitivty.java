@@ -118,7 +118,7 @@ public class ExploreAcitivty extends AppCompatActivity{
         barChart.getDescription().setEnabled(false); // disabled the bottom right corner description
         barChart.setAutoScaleMinMaxEnabled(true);
         barChart.setDrawValueAboveBar(true);
-          barChart
+        //TODO add more here
 
         barChart.setDragEnabled(true);
         barChart.setVisibleXRangeMaximum(3);
