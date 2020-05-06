@@ -1,11 +1,8 @@
 package com.example.investmentideas;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -16,13 +13,6 @@ import androidx.core.content.ContextCompat;
 import androidx.core.view.GestureDetectorCompat;
 
 import com.github.mikephil.charting.charts.BarChart;
-import com.github.mikephil.charting.data.BarData;
-import com.github.mikephil.charting.data.BarDataSet;
-import com.github.mikephil.charting.data.BarEntry;
-import com.github.mikephil.charting.formatter.IAxisValueFormatter;
-import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
-import com.github.mikephil.charting.utils.ColorTemplate;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -92,7 +82,7 @@ public class ExploreAcitivty extends AppCompatActivity{
             }
         });
 
-        
+
 
     }
 
