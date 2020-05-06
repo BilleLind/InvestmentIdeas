@@ -11,6 +11,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
+import java.io.IOException;
+
 public class LoginActivity extends AppCompatActivity {
 
     LoginDatabaseHelper db;
@@ -43,7 +45,9 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
-        intrinoAPI = new IntrinoAPI();
+
+
+        intrinoAPI =  new IntrinoAPI();
         AsyncTask.execute(new Runnable() {
             @Override
             public void run() {
