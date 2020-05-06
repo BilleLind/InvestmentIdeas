@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.investmentideas">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -16,10 +17,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity"/>
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".TopStockActivity"/>
-        <activity android:name=".ExploreAcitivty"/>
+
+
+
+        <activity android:name=".RegisterActivity">
+
+        </activity>
+
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+        <activity android:name=".TopStockActivity">
+
+        </activity>
+        <activity android:name=".ExploreAcitivty">
+
+        </activity>
 
         <activity android:name=".sector.HealthCareSector"/>
         <activity android:name=".sector.Technology"/>
@@ -32,6 +46,7 @@
         <activity android:name=".sector.Industrials" />
         <activity android:name=".sector.ConsumerDefensive" />
         <activity android:name=".sector.Energy" />
+
     </application>
 
 </manifest>
