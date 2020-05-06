@@ -1,6 +1,7 @@
 package com.example.investmentideas;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,6 +17,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText e1, e2;
     Button login;
     public static MyStockDatabase myStockDatabase;
+    IntrinoAPI intrinoAPI;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,13 @@ public class LoginActivity extends AppCompatActivity {
                 } else {
                     Toast.makeText(getApplicationContext(), "Wrong email or password", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+        intrinoAPI = new IntrinoAPI();
+        AsyncTask.execute(new Runnable() {
+            @Override
+            public void run() {
+                intrinoAPI.getStock();
             }
         });
     }

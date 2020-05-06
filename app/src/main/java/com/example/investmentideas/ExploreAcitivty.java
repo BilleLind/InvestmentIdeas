@@ -4,16 +4,32 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.core.view.GestureDetectorCompat;
 
+import com.github.mikephil.charting.charts.BarChart;
+import com.github.mikephil.charting.data.BarData;
+import com.github.mikephil.charting.data.BarDataSet;
+import com.github.mikephil.charting.data.BarEntry;
+import com.github.mikephil.charting.formatter.IAxisValueFormatter;
+import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
+import com.github.mikephil.charting.utils.ColorTemplate;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class ExploreAcitivty extends AppCompatActivity{
 
+    private boolean isEnable=false; // https://stackoverflow.com/questions/8244252/star-button-in-android
     static TextView exploreTextview;
     static TextView tickerExplore;
     static TextView companyNameEx;
@@ -30,6 +46,8 @@ public class ExploreAcitivty extends AppCompatActivity{
     static ImageView imageExplore;
 
     private GestureDetectorCompat gestureDetectorCompat = null;
+
+    BarChart barChart;
 
 
     @Override
@@ -55,7 +73,31 @@ public class ExploreAcitivty extends AppCompatActivity{
         SwipeFeature swipeFeature = new SwipeFeature();
         swipeFeature.setActivity(this);
         gestureDetectorCompat = new GestureDetectorCompat(this, swipeFeature);
+
+        final ImageButton ButtonStar = (ImageButton) findViewById(R.id.star);
+        ButtonStar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (isEnable){ //adds / yellow star
+                    ButtonStar.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),android.R.drawable.btn_star_big_off));
+                    Toast.makeText(getApplicationContext(),"Removed from Favorite",Toast.LENGTH_SHORT).show();
+                    //a method for setting it as favorite for the specific stock
+
+                }else{ // removes / blank star
+                    ButtonStar.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),android.R.drawable.btn_star_big_on));
+                    Toast.makeText(getApplicationContext(),"Added to Favorite", Toast.LENGTH_SHORT).show();
+                    // a method for disabled it as favorite for the specific stock (mis-click?) and for resetting it at every new stock shown
+                }
+                isEnable = !isEnable;
+            }
+        });
+
+        
+
     }
+
+
+
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
@@ -64,10 +106,6 @@ public class ExploreAcitivty extends AppCompatActivity{
 
     public static void displayMessage(String message) {
         exploreTextview.setText(message); }
-
-
-
-
 
 
 
