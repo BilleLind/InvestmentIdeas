@@ -21,29 +21,26 @@ import com.example.investmentideas.sector.Utilities;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button technology, health, finacial, cyclical, basic, defensive, utilities, communication, energy, industrial, real;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        technology = findViewById(R.id.tech);
-        health = findViewById(R.id.healthCare);
-        finacial = findViewById(R.id.financial);
-        cyclical = findViewById(R.id.ConsumerCyclical);
-        basic = findViewById(R.id.BasicMaterials);
-        defensive = findViewById(R.id.ConsumerDefensive);
-        utilities = findViewById(R.id.Utilities);
-        communication = findViewById(R.id.Communication);
-        energy = findViewById(R.id.Energy);
-        industrial = findViewById(R.id.Industrials);
-        real = findViewById(R.id.RealEstate);
+        Button technology = findViewById(R.id.tech);
+        Button health = findViewById(R.id.healthCare);
+        Button financial = findViewById(R.id.financial);
+        Button cyclical = findViewById(R.id.ConsumerCyclical);
+        Button basic = findViewById(R.id.BasicMaterials);
+        Button defensive = findViewById(R.id.ConsumerDefensive);
+        Button utilities = findViewById(R.id.Utilities);
+        Button communication = findViewById(R.id.Communication);
+        Button energy = findViewById(R.id.Energy);
+        Button industrial = findViewById(R.id.Industrials);
+        Button real = findViewById(R.id.RealEstate);
 
 
         technology.setOnClickListener(this);
         health.setOnClickListener(this);
-        finacial.setOnClickListener(this);
+        financial.setOnClickListener(this);
         cyclical.setOnClickListener(this);
         basic.setOnClickListener(this);
         defensive.setOnClickListener(this);
