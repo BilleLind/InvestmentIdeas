@@ -37,7 +37,7 @@ public class ExploreAcitivty extends AppCompatActivity{
 
     private GestureDetectorCompat gestureDetectorCompat = null;
 
-    BarChart barChart;
+    //BarChart barChart;
 
 
     @Override

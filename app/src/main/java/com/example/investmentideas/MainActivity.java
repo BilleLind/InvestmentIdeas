@@ -1,6 +1,7 @@
 package com.example.investmentideas;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -23,11 +24,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button technology, health, finacial, cyclical, basic, defensive, utilities, communication, energy, industrial, real;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         technology = findViewById(R.id.tech);
         health = findViewById(R.id.healthCare);
         finacial = findViewById(R.id.financial);
@@ -95,6 +97,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void onTopStockClick(View v) {
         startActivity(new Intent(MainActivity.this, TopStockActivity.class));
+
+
+
     }
 
     public void onExploreClick(View v) {
