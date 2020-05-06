@@ -16,23 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".TopStockActivity"/>
+        <activity android:name=".ExploreAcitivty"/>
 
-
-        <activity android:name=".RegisterActivity">
-
-        </activity>
-
-        <activity android:name=".MainActivity">
-
-        </activity>
-
-        <activity android:name=".TopStockActivity">
-
-        </activity>
-        <activity android:name=".ExploreAcitivty">
-
-        </activity>
-
+        <activity android:name=".sector.HealthCareSector"/>
+        <activity android:name=".sector.Technology"/>
+        <activity android:name=".sector.RealEstate" />
+        <activity android:name=".sector.FinancialServices" />
+        <activity android:name=".sector.ConsumerCyclical" />
+        <activity android:name=".sector.BasicMaterials" />
+        <activity android:name=".sector.Utilities" />
+        <activity android:name=".sector.CommunicationServices" />
+        <activity android:name=".sector.Industrials" />
+        <activity android:name=".sector.ConsumerDefensive" />
+        <activity android:name=".sector.Energy" />
     </application>
 
 </manifest>

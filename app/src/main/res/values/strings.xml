@@ -28,4 +28,15 @@
     <string name="net2020">net2020</string>
     <string name="links">Links:</string>
     <string name="https_finance_yahoo_com_quote_note_st_profile_p_note_st">https://finance.yahoo.com/quote/NOTE.ST/profile?p=NOTE.ST</string>
+    <string name="Technology">Technology</string>
+    <string name="Health_Care">Health Care</string>
+    <string name="real_estate">Real Estate</string>
+    <string name="financial_services">Financial Services</string>
+    <string name="consumer_cyclical">Consumer cyclical</string>
+    <string name="basic_materials">Basic materials</string>
+    <string name="consumer_defensive">Consumer defensive</string>
+    <string name="utilities">Utilities</string>
+    <string name="communications_services">Communications Services</string>
+    <string name="energy">Energy</string>
+    <string name="industrials">Industrials</string>
 </resources>

@@ -53,23 +53,23 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
                     <Button
-                        android:id="@+id/sector1"
+                        android:id="@+id/tech"
                         android:layout_width="145dp"
                         android:layout_height="87dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
-                        android:text="Button"
+                        android:text="@string/Technology"
                         />
 
                     <Button
-                        android:id="@+id/sector2"
+                        android:id="@+id/healthCare"
                         android:layout_width="145dp"
                         android:layout_height="87dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginRight="40dp"
-                        android:text="Button"
-                        />
+                        android:text="@string/Health_Care"
+                        android:layout_marginEnd="40dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -77,23 +77,23 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
                     <Button
-                        android:id="@+id/sector3"
+                        android:id="@+id/RealEstate"
                         android:layout_width="145dp"
                         android:layout_height="87dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
-                        android:text="Button"
+                        android:text="@string/real_estate"
                         />
 
                     <Button
-                        android:id="@+id/sector4"
+                        android:id="@+id/financial"
                         android:layout_width="145dp"
                         android:layout_height="87dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginRight="40dp"
-                        android:text="Button"
-                        />
+                        android:text="@string/financial_services"
+                        android:layout_marginEnd="40dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -101,91 +101,82 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
                     <Button
-                        android:id="@+id/sector5"
+                        android:id="@+id/ConsumerCyclical"
                         android:layout_width="145dp"
                         android:layout_height="87dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
-                        android:text="Button"
+                        android:text="@string/consumer_cyclical"
                         />
 
                     <Button
-                        android:id="@+id/sector6"
+                        android:id="@+id/BasicMaterials"
                         android:layout_width="145dp"
                         android:layout_height="87dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginRight="40dp"
-                        android:text="Button"
-                        />
+                        android:text="@string/basic_materials"
+                        android:layout_marginEnd="40dp" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
                     <Button
-                        android:id="@+id/sector7"
+                        android:id="@+id/ConsumerDefensive"
                         android:layout_width="145dp"
                         android:layout_height="87dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
-                        android:text="Button"
+                        android:text="@string/consumer_defensive"
                         />
 
                     <Button
-                        android:id="@+id/sector8"
+                        android:id="@+id/Utilities"
                         android:layout_width="145dp"
                         android:layout_height="87dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginRight="40dp"
-                        android:text="Button"
-                        />
+                        android:text="@string/utilities"
+                        android:layout_marginEnd="40dp" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
                     <Button
-                        android:id="@+id/sector9"
+                        android:id="@+id/Communication"
                         android:layout_width="145dp"
                         android:layout_height="87dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
-                        android:text="Button"
+                        android:text="@string/communications_services"
                         />
 
                     <Button
-                        android:id="@+id/sector10"
+                        android:id="@+id/Energy"
                         android:layout_width="145dp"
                         android:layout_height="87dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginRight="40dp"
-                        android:text="Button"
-                        />
+                        android:text="@string/energy"
+                        android:layout_marginEnd="40dp" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
                     <Button
-                        android:id="@+id/sector11"
+                        android:id="@+id/Industrials"
                         android:layout_width="145dp"
                         android:layout_height="87dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
-                        android:text="Button"
-                        />
-
-                    <Button
-                        android:id="@+id/sector12"
-                        android:layout_width="145dp"
-                        android:layout_height="87dp"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginRight="40dp"
-                        android:text="Button"
+                        android:text="@string/industrials"
                         />
                 </LinearLayout>
             </LinearLayout>
