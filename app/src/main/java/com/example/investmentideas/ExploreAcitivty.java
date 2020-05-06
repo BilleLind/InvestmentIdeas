@@ -92,29 +92,10 @@ public class ExploreAcitivty extends AppCompatActivity{
             }
         });
 
-        barChart = (BarChart) findViewById(R.id.barChartExplore);
-        //https://github.com/PhilJay/MPAndroidChart/wiki/Setting-Data#grouped-barchart
-
-        float[] EPS = {1, 2, 3, 4};
-        int[] NetIncome = {80, 90, 120, 160};
-        int[] revenueBar = {200,240,260,320};
-
-        List<BarEntry> entriesGroup1 = new ArrayList<>();
-        List<BarEntry> entriesGroup2 = new ArrayList<>();
-        List<BarEntry> entriesGroup3 = new ArrayList<>();
-
-        for (int i = 0; i < EPS.length; i++) {
-            entriesGroup1.add(new BarEntry(i, EPS[i]));
-            entriesGroup1.add(new BarEntry(i, NetIncome[i]));
-            entriesGroup1.add(new BarEntry(i, revenueBar[i]));
-        }
-
-        BarDataSet set1 = new BarDataSet(entriesGroup1, "EPS");
-        BarDataSet set2 = new BarDataSet(entriesGroup2, "Net Income");
-        BarDataSet set3 = new BarDataSet(entriesGroup3, "Revenue");
-
+        
 
     }
+
 
 
 
