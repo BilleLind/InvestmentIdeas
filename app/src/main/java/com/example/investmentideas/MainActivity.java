@@ -24,20 +24,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button technology, health, finacial, cyclical, basic, defensive, utilities, communication, energy, industrial, real;
 
-<<<<<<< HEAD
-
-public class MainActivity extends AppCompatActivity {
-=======
->>>>>>> master
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-<<<<<<< HEAD
 
 
-=======
         technology = findViewById(R.id.tech);
         health = findViewById(R.id.healthCare);
         finacial = findViewById(R.id.financial);
@@ -101,7 +93,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, Industrials.class));
                 break;
         }
->>>>>>> master
     }
 
     public void onTopStockClick(View v) {

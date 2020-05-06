@@ -17,7 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
+
 
 
         <activity android:name=".RegisterActivity">
@@ -35,13 +35,6 @@
 
         </activity>
 
-
-=======
-        <activity android:name=".RegisterActivity"/>
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".TopStockActivity"/>
-        <activity android:name=".ExploreAcitivty"/>
-
         <activity android:name=".sector.HealthCareSector"/>
         <activity android:name=".sector.Technology"/>
         <activity android:name=".sector.RealEstate" />
@@ -53,7 +46,7 @@
         <activity android:name=".sector.Industrials" />
         <activity android:name=".sector.ConsumerDefensive" />
         <activity android:name=".sector.Energy" />
->>>>>>> master
+
     </application>
 
 </manifest>
