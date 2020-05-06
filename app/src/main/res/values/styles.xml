@@ -9,14 +9,23 @@
     </style>
 
     <style name="forText" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:layout_height">32dp</item>
         <item name="android:textSize">18sp</item>
         <item name="android:gravity">center_vertical</item>
-        <item name="android:layout_marginLeft">5dp</item>
-        <item name="android:layout_marginStart">5dp</item>
-        <item name="android:layout_marginRight">5dp</item>
-        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_height">40dp</item>
     </style>
+
+
+    <style name="margin" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+    </style>
+
 
 
 </resources>
