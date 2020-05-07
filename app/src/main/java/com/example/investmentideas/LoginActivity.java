@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -19,7 +20,8 @@ public class LoginActivity extends AppCompatActivity {
     EditText e1, e2;
     Button login;
     public static MyStockDatabase myStockDatabase;
-    IntrinoAPI intrinoAPI;
+    //IntrinoAPI intrinoAPI;
+    StockDatasourceImpl stockDatasource;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -46,14 +48,26 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        stockDatasource = new StockDatasourceImpl();
 
-        intrinoAPI =  new IntrinoAPI();
+        AsyncTask.execute(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    System.out.println(Arrays.toString(stockDatasource.getCompanyList()));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        /*intrinoAPI =  new IntrinoAPI();
         AsyncTask.execute(new Runnable() {
             @Override
             public void run() {
                 intrinoAPI.getStock();
             }
-        });
+        });*/
     }
 
     public void onRegisterClick(View v) {
