@@ -22,7 +22,7 @@ public class SwipeFeature extends GestureDetector.SimpleOnGestureListener {
         String currentClass = (activity.getClass().getSimpleName());
         String explorere = "ExploreAcitivty";
         String topStocky = "TopStockActivity";
-
+        ExploreAcitivty exploreAcitivty = new ExploreAcitivty();
 
         float deltaX = e1.getX() - e2.getX();
         float deltaY = e1.getY() - e2.getY();
@@ -36,7 +36,8 @@ public class SwipeFeature extends GestureDetector.SimpleOnGestureListener {
             if (deltaX > 0) { // this is left
                 //TODO make method for going through every stock
                 if (currentClass.equals(explorere)) {
-                   //TODO ExploreAcitivty.displayMessage(currentClass + "Works");
+                    String h = "Hello"; String a ="a"; String b = "b"; String c = "c"; String d = "d";
+                            exploreAcitivty.displayMessage( h, a,b,c,d, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
                     //method for ExploreAcitivty
                 }
                 if (currentClass.equals(topStocky)) {

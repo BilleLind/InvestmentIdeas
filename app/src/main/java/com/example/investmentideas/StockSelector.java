@@ -8,8 +8,9 @@ public class StockSelector extends ExploreAcitivty{
 
     public static void select() {
 
+
         ExploreAcitivty.tickerExplore.setText("ABC");
-        ExploreAcitivty.companyNameEx.setText("this works");
+        ExploreAcitivty.companyNameExplore.setText("this works");
         ExploreAcitivty.overviewExplore.setText("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADD");
 
         ExploreAcitivty.imageExplore.setImageResource(R.drawable.note);
