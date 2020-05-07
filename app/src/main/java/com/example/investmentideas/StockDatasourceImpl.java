@@ -15,9 +15,9 @@ public class StockDatasourceImpl implements StockDatasource{
     private Company[] companiesList;
 
     @Override
-    public CompanyDetails getCompanyDetails(String ticker) throws IOException {
+    public CompanyDetails getCompanyDetails(String id) throws IOException {
         // Create url to single company
-        Request request = new Request.Builder().url(idUrl + ticker + "?api_key=OjU4YTg3NWY5NDExZmEzMzkxMTlhMzU1YjAwYzNkNDM5").build();
+        Request request = new Request.Builder().url(idUrl + id + "?api_key=OjU4YTg3NWY5NDExZmEzMzkxMTlhMzU1YjAwYzNkNDM5").build();
         Response response = client.newCall(request).execute();
         try {
             if (!response.isSuccessful()) {
