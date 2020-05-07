@@ -2,8 +2,6 @@ package com.example.investmentideas;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -15,10 +13,10 @@ import androidx.core.view.GestureDetectorCompat;
 
 
 public class TopStockActivity extends AppCompatActivity {
-   static TextView overviewTop;
-    static  TextView tickerTop;
+    static TextView overviewTop;
+    static TextView tickerTop;
     static TextView companyNameTop;
-    static     TextView sectorTop;
+    static TextView sectorTop;
     static TextView subSectorTop;
     static TextView rev16Top;
     static TextView rev17Top;
@@ -26,11 +24,11 @@ public class TopStockActivity extends AppCompatActivity {
     static TextView rev19Top;
     static TextView rev20Top;
     static TextView net16Top;
-    static  TextView net17Top;
-    static  TextView net18Top;
-    static  TextView net19Top;
-    static  TextView net20Top;
-    static  ImageView imageTop;
+    static TextView net17Top;
+    static TextView net18Top;
+    static TextView net19Top;
+    static TextView net20Top;
+    static ImageView imageTop;
     private boolean isEnable=false;
 
     private GestureDetectorCompat gestureDetectorCompat = null;
@@ -40,22 +38,22 @@ public class TopStockActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.topstocksactivity);
-        overviewTop = findViewById(R.id.TopOverview);
-        tickerTop = findViewById(R.id.tickerTop);
-        companyNameTop = findViewById(R.id.nameTop);
+        overviewTop = findViewById(R.id.SecOverview);
+        tickerTop = findViewById(R.id.tickerSec);
+        companyNameTop = findViewById(R.id.nameSec);
         sectorTop = findViewById(R.id.SectorTop);
-        subSectorTop = findViewById(R.id.SubSectorTop);
-        rev16Top = findViewById(R.id.revenue2016Top);
-        rev17Top = findViewById(R.id.revenue2017Top);
-        rev18Top = findViewById(R.id.revenue2018Top);
-        rev19Top = findViewById(R.id.revenue2019Top);
-        rev20Top = findViewById(R.id.revenue2020Top);
-        net16Top = findViewById(R.id.netIncome2016Top);
-        net17Top = findViewById(R.id.netIncome2017Top);
-        net18Top = findViewById(R.id.netIncome2018Top);
-        net19Top = findViewById(R.id.netIncome2019Top);
-        net20Top = findViewById(R.id.netIncome2020Top);
-        imageTop = findViewById(R.id.imageTop);
+        subSectorTop = findViewById(R.id.SubSectorSec);
+        rev16Top = findViewById(R.id.revenue2016Sec);
+        rev17Top = findViewById(R.id.revenue2017Sec);
+        rev18Top = findViewById(R.id.revenue2018Sec);
+        rev19Top = findViewById(R.id.revenue2019Sec);
+        rev20Top = findViewById(R.id.revenue2020Sec);
+        net16Top = findViewById(R.id.netIncome2016Sec);
+        net17Top = findViewById(R.id.netIncome2017Sec);
+        net18Top = findViewById(R.id.netIncome2018Sec);
+        net19Top = findViewById(R.id.netIncome2019Sec);
+        net20Top = findViewById(R.id.netIncome2020Sec);
+        imageTop = findViewById(R.id.imageSec);
 
 
 

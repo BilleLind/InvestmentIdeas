@@ -25,14 +25,14 @@
             android:layout_height="match_parent"
             android:layout_gravity="end"
             android:background="@drawable/custombutton"
-            android:id="@+id/SubSectorTop"
+            android:id="@+id/SubSectorSec"
             android:text="@string/sub_sector"
             style="@style/forText"/>
     </LinearLayout>
 
     <ImageView
         android:layout_marginTop="4dp"
-        android:id="@+id/imageTop"
+        android:id="@+id/imageSec"
         android:layout_width="wrap_content"
         android:layout_height="180dp"
         android:paddingLeft="10dp"
@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-            android:id="@+id/tickerTop"
+            android:id="@+id/tickerSec"
             android:layout_width="match_parent"
             android:layout_weight="1"
             android:text="@string/ticker_code"
@@ -63,7 +63,7 @@
             android:background="@null"
             android:src="@android:drawable/btn_star" />
         <TextView
-            android:id="@+id/nameTop"
+            android:id="@+id/nameSec"
             android:layout_width="match_parent"
             android:layout_weight="1"
             android:text="@string/company_name"
@@ -72,7 +72,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/TopOverview"
+        android:id="@+id/SecOverview"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:text="@string/overview"
@@ -159,7 +159,7 @@
                     android:background="#00000a" />
 
                 <TextView
-                    android:id="@+id/revenue2016Top"
+                    android:id="@+id/revenue2016Sec"
                     style="@style/forText"
                     android:layout_width="match_parent"
                     android:text="@string/rev2016" />
@@ -170,7 +170,7 @@
                     android:background="#00000a" />
 
                 <TextView
-                    android:id="@+id/netIncome2016Top"
+                    android:id="@+id/netIncome2016Sec"
                     style="@style/forText"
                     android:layout_width="match_parent"
                     android:text="@string/net2016" />
@@ -202,7 +202,7 @@
                     android:background="#00000a" />
 
                 <TextView
-                    android:id="@+id/revenue2017Top"
+                    android:id="@+id/revenue2017Sec"
                     style="@style/forText"
                     android:layout_width="match_parent"
                     android:text="@string/rev2017" />
@@ -213,7 +213,7 @@
                     android:background="#00000a" />
 
                 <TextView
-                    android:id="@+id/netIncome2017Top"
+                    android:id="@+id/netIncome2017Sec"
                     style="@style/forText"
                     android:layout_width="match_parent"
                     android:text="@string/net2017" />
@@ -245,7 +245,7 @@
                     android:background="#00000a" />
 
                 <TextView
-                    android:id="@+id/revenue2018Top"
+                    android:id="@+id/revenue2018Sec"
                     style="@style/forText"
                     android:layout_width="match_parent"
                     android:text="@string/rev2018" />
@@ -256,7 +256,7 @@
                     android:background="#00000a" />
 
                 <TextView
-                    android:id="@+id/netIncome2018Top"
+                    android:id="@+id/netIncome2018Sec"
                     style="@style/forText"
                     android:layout_width="match_parent"
                     android:text="@string/net2018" />
@@ -288,7 +288,7 @@
                     android:background="#00000a" />
 
                 <TextView
-                    android:id="@+id/revenue2019Top"
+                    android:id="@+id/revenue2019Sec"
                     style="@style/forText"
                     android:layout_width="match_parent"
                     android:text="@string/rev2019" />
@@ -299,7 +299,7 @@
                     android:background="#00000a" />
 
                 <TextView
-                    android:id="@+id/netIncome2019Top"
+                    android:id="@+id/netIncome2019Sec"
                     style="@style/forText"
                     android:layout_width="match_parent"
                     android:text="@string/net2019" />
@@ -330,7 +330,7 @@
                     android:background="#00000a" />
 
                 <TextView
-                    android:id="@+id/revenue2020Top"
+                    android:id="@+id/revenue2020Sec"
                     style="@style/forText"
                     android:layout_width="match_parent"
                     android:text="@string/rev2020" />
@@ -341,7 +341,7 @@
                     android:background="#00000a" />
 
                 <TextView
-                    android:id="@+id/netIncome2020Top"
+                    android:id="@+id/netIncome2020Sec"
                     style="@style/forText"
                     android:layout_width="match_parent"
                     android:text="@string/net2020" />
