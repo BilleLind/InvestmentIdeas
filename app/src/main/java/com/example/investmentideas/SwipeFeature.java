@@ -36,7 +36,7 @@ public class SwipeFeature extends GestureDetector.SimpleOnGestureListener {
             if (deltaX > 0) { // this is left
                 //TODO make method for going through every stock
                 if (currentClass.equals(explorere)) {
-                    ExploreAcitivty.displayMessage(currentClass + "Works");
+                   //TODO ExploreAcitivty.displayMessage(currentClass + "Works");
                     //method for ExploreAcitivty
                 }
                 if (currentClass.equals(topStocky)) {
@@ -46,7 +46,7 @@ public class SwipeFeature extends GestureDetector.SimpleOnGestureListener {
             } else {
                 if (currentClass.equals(explorere)) {
                     StockSelector.select();
-                    ExploreAcitivty.displayMessage("Swipe to right");
+                   //TODO ExploreAcitivty.displayMessage("Swipe to right");
                 }
 
                 if (currentClass.equals(topStocky)) {

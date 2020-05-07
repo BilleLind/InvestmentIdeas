@@ -26,7 +26,7 @@ import java.util.ArrayList;
 public class ExploreAcitivty extends AppCompatActivity{
 
     private boolean isEnable=false; // https://stackoverflow.com/questions/8244252/star-button-in-android
-    static TextView exploreTextview;
+    static TextView overviewExplore;
     static TextView tickerExplore;
     static TextView companyNameEx;
     static TextView sectorExplore;
@@ -52,7 +52,7 @@ public class ExploreAcitivty extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.exploreactivity);
 
-        exploreTextview = findViewById(R.id.ExploreOverview);
+        overviewExplore = findViewById(R.id.ExploreOverview);
         tickerExplore = findViewById(R.id.tickerExplore);
         companyNameEx = findViewById(R.id.nameExplore);
         sectorExplore = findViewById(R.id.SectorExplore);
@@ -140,7 +140,7 @@ public class ExploreAcitivty extends AppCompatActivity{
     }
     private ArrayList<BarEntry> NetIncome() {
         ArrayList<BarEntry> barEntries = new ArrayList<>();
-        barEntries.add(new BarEntry(1, -120));
+        barEntries.add(new BarEntry(1,  120));
         barEntries.add(new BarEntry(2, 140));
         barEntries.add(new BarEntry(3, 160));
         barEntries.add(new BarEntry(4, 180));
@@ -184,8 +184,27 @@ public class ExploreAcitivty extends AppCompatActivity{
         gestureDetectorCompat.onTouchEvent(event);
         return true; }
 
-    public static void displayMessage(String message) {
-        exploreTextview.setText(message); }
+    public static void displayMessage(String overview, String ticker, String company, String sector, String subSector, double rev16, double rev17, double rev18, double rev19,
+                                      double net16, double net17, double net18, double net19, ImageView image) {
+        overviewExplore.setText(overview);
+        tickerExplore.setText(ticker);
+        companyNameEx.setText(company);
+        sectorExplore.setText(sector);
+        subSectorExplore.setText(subSector);
+        rev16Ex.setText((int) rev16);
+        rev17Ex.setText((int) rev17);
+        rev18Ex.setText((int) rev18);
+        rev19Ex.setText((int) rev19);
+        net16Ex.setText((int) net16);
+        net17Ex.setText((int) net17);
+        net18Ex.setText((int) net18);
+        net19Ex.setText((int) net19);
+
+
+
+
+
+    }
 
 
 
