@@ -28,20 +28,20 @@ public class ExploreAcitivty extends AppCompatActivity{
     private boolean isEnable=false; // https://stackoverflow.com/questions/8244252/star-button-in-android
     static TextView overviewExplore; private String overviewEx;
     static TextView tickerExplore; private String tickerEx;
-    static TextView companyNameExplore; private String companyEx;
+    static  TextView companyNameExplore; private String companyEx;
     static TextView sectorExplore; private String sectorEx;
-    static TextView subSectorExplore; private String subSectorEx;
-    static TextView rev16Explore; private double rev16; public void setRev16(double rev16) { this.rev16 = rev16; }  public double getRev16() { return rev16; }
-    static TextView rev17Explore; private double rev17; public void setRev17(double rev17) { this.rev17 = rev17; }  public double getRev17() { return rev17; }
-    static TextView rev18Explore; private double rev18; public void setRev18(double rev18) { this.rev18 = rev18; }  public double getRev18() { return rev18; }
-    static TextView rev19Explore; private double rev19; public void setRev19(double rev19) { this.rev19 = rev19; }  public double getRev19() { return rev19; }
-    static TextView rev20Explore;
-    static TextView net16Explore; private double net16; public void setNet16(double net16) { this.net16 = net16; } public double getNet16() { return net16; }
-    static TextView net17Explore; private double net17; public void setNet17(double net17) { this.net17 = net17; } public double getNet17() { return net17; }
-    static TextView net18Explore; private double net18; public void setNet18(double net18) { this.net18 = net18; } public double getNet18() { return net18; }
-    static TextView net19Explore; private double net19; public void setNet19(double net19) { this.net19 = net19; } public double getNet19() { return net19; }
-    static TextView net20Explore;
-    static ImageView imageExplore;
+    static  TextView subSectorExplore; private String subSectorEx;
+    static  TextView rev16Explore; private double rev16; public void setRev16(double rev16) { this.rev16 = rev16; }  public double getRev16() { return rev16; }
+    static   TextView rev17Explore; private double rev17; public void setRev17(double rev17) { this.rev17 = rev17; }  public double getRev17() { return rev17; }
+    static   TextView rev18Explore; private double rev18; public void setRev18(double rev18) { this.rev18 = rev18; }  public double getRev18() { return rev18; }
+    static   TextView rev19Explore; private double rev19; public void setRev19(double rev19) { this.rev19 = rev19; }  public double getRev19() { return rev19; }
+    static   TextView rev20Explore;
+    static   TextView net16Explore; private double net16; public void setNet16(double net16) { this.net16 = net16; } public double getNet16() { return net16; }
+    static   TextView net17Explore; private double net17; public void setNet17(double net17) { this.net17 = net17; } public double getNet17() { return net17; }
+    static   TextView net18Explore; private double net18; public void setNet18(double net18) { this.net18 = net18; } public double getNet18() { return net18; }
+    static   TextView net19Explore; private double net19; public void setNet19(double net19) { this.net19 = net19; } public double getNet19() { return net19; }
+    static   TextView net20Explore;
+    static   ImageView imageExplore;
 
     private GestureDetectorCompat gestureDetectorCompat = null;
 
@@ -138,8 +138,6 @@ public class ExploreAcitivty extends AppCompatActivity{
 
         barChart.invalidate();
 
-
-
     }
     private ArrayList<BarEntry> NetIncome() {
         ArrayList<BarEntry> barEntries = new ArrayList<>();
@@ -148,8 +146,7 @@ public class ExploreAcitivty extends AppCompatActivity{
         barEntries.add(new BarEntry(3, 80));
         barEntries.add(new BarEntry(4, 110));
         barEntries.add(new BarEntry(5, 120));
-        return barEntries;
-    }
+        return barEntries; }
 
     private ArrayList<BarEntry> Revenue() {
         ArrayList<BarEntry> barEntries = new ArrayList<>();
@@ -158,8 +155,8 @@ public class ExploreAcitivty extends AppCompatActivity{
         barEntries.add(new BarEntry(3, 460));
         barEntries.add(new BarEntry(4, 580));
         barEntries.add(new BarEntry(5, 600));
-        return barEntries;
-    }
+        return barEntries; }
+
     private ArrayList<BarEntry> EPS() {
         ArrayList<BarEntry> barEntries = new ArrayList<>();
         barEntries.add(new BarEntry(1, 1));
@@ -167,8 +164,8 @@ public class ExploreAcitivty extends AppCompatActivity{
         barEntries.add(new BarEntry(3, 4));
         barEntries.add(new BarEntry(4, 5));
         barEntries.add(new BarEntry(5, 8));
-        return barEntries;
-    }
+        return barEntries; }
+
     private ArrayList<BarEntry> Dividend() {
         ArrayList<BarEntry> barEntries = new ArrayList<>();
         barEntries.add(new BarEntry(1, 10));
@@ -176,8 +173,7 @@ public class ExploreAcitivty extends AppCompatActivity{
         barEntries.add(new BarEntry(3, 12));
         barEntries.add(new BarEntry(4, 15));
         barEntries.add(new BarEntry(5, 20));
-        return barEntries;
-    }
+        return barEntries;                  }
 
 
 
@@ -188,8 +184,8 @@ public class ExploreAcitivty extends AppCompatActivity{
         gestureDetectorCompat.onTouchEvent(event);
         return true; }
 
-    public boolean displayMessage(String overview, String ticker, String company, String sector, String subSector, float rev16, float rev17,
-                                  float rev18, float rev19,float rev20, float net16, float net17, float net18, float net19, float net20) /* , ImageView image*/ {
+    public static boolean displayMessage(String overview, String ticker, String company, String sector, String subSector, float rev16, float rev17,
+                                         float rev18, float rev19, float rev20, float net16, float net17, float net18, float net19, float net20) /* , ImageView image*/ {
         overviewExplore.setText(overview);
         tickerExplore.setText(ticker);
         companyNameExplore.setText(company);

@@ -23,6 +23,7 @@ public class SwipeFeature extends GestureDetector.SimpleOnGestureListener {
         String explorere = "ExploreAcitivty";
         String topStocky = "TopStockActivity";
         ExploreAcitivty exploreAcitivty = new ExploreAcitivty();
+        StockSelector stockSelector = new StockSelector();
 
         float deltaX = e1.getX() - e2.getX();
         float deltaY = e1.getY() - e2.getY();
@@ -37,21 +38,26 @@ public class SwipeFeature extends GestureDetector.SimpleOnGestureListener {
                 //TODO make method for going through every stock
                 if (currentClass.equals(explorere)) {
                     String h = "Hello"; String a ="a"; String b = "b"; String c = "c"; String d = "d";
-                            exploreAcitivty.displayMessage( h, a,b,c,d, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+                            ExploreAcitivty.displayMessage( h, a,b,c,d, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
                     //method for ExploreAcitivty
                 }
-                if (currentClass.equals(topStocky)) {
+                if (currentClass.equals(topStocky)) { //TODO make hand off, the data from database into the display Message, could have a method that gets and it would refresh
                     //method for TopstopActivity
-                    TopStockActivity.displayMessage(currentClass + "Works");
+                    String h = "Hello"; String a ="dos"; String b = "dos"; String c = "dos"; String d = "dos";
+                   TopStockActivity.displayMessage( h, a,b,c,d, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
                 }
             } else {
                 if (currentClass.equals(explorere)) {
-                    StockSelector.select();
-                   //TODO ExploreAcitivty.displayMessage("Swipe to right");
+                    String h = "Hello"; String a ="ados"; String b = "dos"; String c = "dos"; String d = "dos";
+                    ExploreAcitivty.displayMessage( h, a,b,c,d, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+
                 }
 
                 if (currentClass.equals(topStocky)) {
-                    TopStockActivity.displayMessage("Swipe to right");
+                    String h = "Hello"; String a ="a"; String b = "b"; String c = "c"; String d = "d";
+
+                    TopStockActivity.displayMessage( h, a,b,c,d, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+
                 }
             }
         }
