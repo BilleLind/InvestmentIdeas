@@ -65,8 +65,6 @@ public class TopStockActivity extends AppCompatActivity {
         swipeFeature.setActivity(this);
         gestureDetectorCompat = new GestureDetectorCompat(this, swipeFeature);
 
-<<<<<<< HEAD
-=======
         final ImageButton ButtonStar = (ImageButton) findViewById(R.id.starTop);
         ButtonStar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,7 +90,7 @@ public class TopStockActivity extends AppCompatActivity {
 
 
         overviewTop.setText(stock.getAboutStock());
->>>>>>> master
+
 
         stockDatasource = new StockDatasourceImpl();
 
