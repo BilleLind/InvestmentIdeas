@@ -1,4 +1,4 @@
-package com.example.investmentideas;
+package com.example.investmentideas.domain;
 
 import java.io.IOException;
 import java.util.ArrayList;

@@ -2,6 +2,8 @@ package com.example.investmentideas;
 
 import android.widget.ImageView;
 
+import com.example.investmentideas.presentation.TopStockActivity;
+
 public class StockSelector  {
 
 

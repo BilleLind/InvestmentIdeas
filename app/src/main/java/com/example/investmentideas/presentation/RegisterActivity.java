@@ -1,4 +1,4 @@
-package com.example.investmentideas;
+package com.example.investmentideas.presentation;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.investmentideas.data.LoginDatabaseHelper;
+import com.example.investmentideas.R;
 
 public class RegisterActivity extends AppCompatActivity {
     LoginDatabaseHelper db;

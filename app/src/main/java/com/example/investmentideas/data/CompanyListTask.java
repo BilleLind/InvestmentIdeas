@@ -1,6 +1,9 @@
-package com.example.investmentideas;
+package com.example.investmentideas.data;
 
 import android.os.AsyncTask;
+
+import com.example.investmentideas.domain.Company;
+import com.example.investmentideas.domain.StockDatasource;
 
 import java.io.IOException;
 import java.util.ArrayList;

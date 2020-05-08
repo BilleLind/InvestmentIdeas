@@ -1,4 +1,4 @@
-package com.example.investmentideas;
+package com.example.investmentideas.domain;
 
 public class CompanyDetails {
     private String id;
