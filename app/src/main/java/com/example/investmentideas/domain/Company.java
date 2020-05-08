@@ -1,4 +1,4 @@
-package com.example.investmentideas;
+package com.example.investmentideas.domain;
 
 import androidx.annotation.NonNull;
 

@@ -1,4 +1,6 @@
-package com.example.investmentideas;
+package com.example.investmentideas.data;
+
+import com.example.investmentideas.domain.Company;
 
 import java.util.ArrayList;
 

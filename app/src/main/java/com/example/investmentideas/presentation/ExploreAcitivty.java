@@ -1,4 +1,4 @@
-package com.example.investmentideas;
+package com.example.investmentideas.presentation;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -13,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.core.view.GestureDetectorCompat;
 
+import com.example.investmentideas.R;
+import com.example.investmentideas.SwipeFeature;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.data.BarData;

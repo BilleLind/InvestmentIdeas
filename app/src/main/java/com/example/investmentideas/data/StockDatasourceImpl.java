@@ -1,5 +1,8 @@
-package com.example.investmentideas;
+package com.example.investmentideas.data;
 
+import com.example.investmentideas.domain.Company;
+import com.example.investmentideas.domain.CompanyDetails;
+import com.example.investmentideas.domain.StockDatasource;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.squareup.okhttp.OkHttpClient;
@@ -9,7 +12,7 @@ import com.squareup.okhttp.Response;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class StockDatasourceImpl implements StockDatasource{
+public class StockDatasourceImpl implements StockDatasource {
     private OkHttpClient client = new OkHttpClient();
     private String idUrl = "https://api-v2.intrinio.com/companies/";
     private String url = "https://api-v2.intrinio.com/companies?api_key=OjU4YTg3NWY5NDExZmEzMzkxMTlhMzU1YjAwYzNkNDM5";

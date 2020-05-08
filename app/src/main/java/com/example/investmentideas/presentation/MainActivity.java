@@ -1,13 +1,13 @@
-package com.example.investmentideas;
+package com.example.investmentideas.presentation;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.investmentideas.R;
 import com.example.investmentideas.sector.BasicMaterials;
 import com.example.investmentideas.sector.CommunicationServices;
 import com.example.investmentideas.sector.ConsumerCyclical;

@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".presentation.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,18 +20,18 @@
 
 
 
-        <activity android:name=".RegisterActivity">
+        <activity android:name=".presentation.RegisterActivity">
 
         </activity>
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".presentation.MainActivity">
 
         </activity>
 
-        <activity android:name=".TopStockActivity">
+        <activity android:name=".presentation.TopStockActivity">
 
         </activity>
-        <activity android:name=".ExploreAcitivty">
+        <activity android:name=".presentation.ExploreAcitivty">
 
         </activity>
 
