@@ -1,15 +1,17 @@
 package com.example.investmentideas;
 
+import java.util.ArrayList;
+
 public class CompanyList {
-    private Company[] companies;
+    private ArrayList<Company> companies;
 
     CompanyList() {};
 
-    public Company[] getCompanies() {
+    public ArrayList<Company> getCompanies() {
         return companies;
     }
 
-    public void setCompanies(Company[] companies) {
+    public void setCompanies(ArrayList<Company> companies) {
         this.companies = companies;
     }
 }

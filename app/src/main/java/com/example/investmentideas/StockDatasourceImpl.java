@@ -7,12 +7,13 @@ import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class StockDatasourceImpl implements StockDatasource{
     private OkHttpClient client = new OkHttpClient();
     private String idUrl = "https://api-v2.intrinio.com/companies/";
     private String url = "https://api-v2.intrinio.com/companies?api_key=OjU4YTg3NWY5NDExZmEzMzkxMTlhMzU1YjAwYzNkNDM5";
-    private Company[] companiesList;
+    private static ArrayList<Company> companiesList;
 
     @Override
     public CompanyDetails getCompanyDetails(String id) throws IOException {
@@ -32,7 +33,7 @@ public class StockDatasourceImpl implements StockDatasource{
         }
     }
     @Override
-    public Company[] getCompanyList() throws IOException {
+    public ArrayList<Company> getCompanyList() throws IOException {
         //URL for all companies
         Request request = new Request.Builder().url(url).build();
         Response response = client.newCall(request).execute();
