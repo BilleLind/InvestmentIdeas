@@ -1,7 +1,6 @@
-package com.example.investmentideas;
+package com.example.investmentideas.presentation;
 
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,7 +11,14 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
-import java.io.IOException;
+import com.example.investmentideas.domain.Company;
+import com.example.investmentideas.data.CompanyArrayAdapter;
+import com.example.investmentideas.data.CompanyListTask;
+import com.example.investmentideas.data.LoginDatabaseHelper;
+import com.example.investmentideas.MyStockDatabase;
+import com.example.investmentideas.R;
+import com.example.investmentideas.data.StockDatasourceImpl;
+
 import java.util.ArrayList;
 public class LoginActivity extends AppCompatActivity {
 

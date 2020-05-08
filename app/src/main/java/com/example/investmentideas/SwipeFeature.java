@@ -4,8 +4,10 @@ import android.app.Activity;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 
-import androidx.appcompat.app.AppCompatActivity;
 
+import androidx.appcompat.app.AppCompatActivity;
+import com.example.investmentideas.presentation.ExploreAcitivty;
+import com.example.investmentideas.presentation.TopStockActivity;
 import com.example.investmentideas.sector.BasicMaterials;
 import com.example.investmentideas.sector.CommunicationServices;
 import com.example.investmentideas.sector.ConsumerCyclical;

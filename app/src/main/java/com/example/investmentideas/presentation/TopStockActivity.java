@@ -1,5 +1,4 @@
-package com.example.investmentideas;
-import android.os.AsyncTask;
+package com.example.investmentideas.presentation;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -12,7 +11,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.core.view.GestureDetectorCompat;
 
-import java.io.IOException;
+import com.example.investmentideas.R;
+import com.example.investmentideas.Stock;
+import com.example.investmentideas.data.StockDatasourceImpl;
+import com.example.investmentideas.SwipeFeature;
 
 
 public class TopStockActivity extends AppCompatActivity {

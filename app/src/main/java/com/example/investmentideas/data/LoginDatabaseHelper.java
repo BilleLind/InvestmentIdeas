@@ -1,4 +1,4 @@
-package com.example.investmentideas;
+package com.example.investmentideas.data;
 
 import android.content.ContentValues;
 import android.content.Context;
