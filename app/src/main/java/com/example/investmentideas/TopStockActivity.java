@@ -1,4 +1,5 @@
 package com.example.investmentideas;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -10,6 +11,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.core.view.GestureDetectorCompat;
+
+import java.io.IOException;
 
 
 public class TopStockActivity extends AppCompatActivity {
@@ -32,6 +35,7 @@ public class TopStockActivity extends AppCompatActivity {
     private boolean isEnable=false;
 
     private GestureDetectorCompat gestureDetectorCompat = null;
+    StockDatasourceImpl stockDatasource;
 
 
     @Override
@@ -88,21 +92,18 @@ public class TopStockActivity extends AppCompatActivity {
         overviewTop.setText(stock.getAboutStock());
 
 
-        /*Thread thread = new Thread(new Runnable() {
+        stockDatasource = new StockDatasourceImpl();
+
+        /*AsyncTask.execute(new Runnable() {
             @Override
             public void run() {
-                final Stock stock1 = MainActivity.myStockDatabase.myDao().findByName(stock.getStockName());
-                Handler refresh = new Handler(Looper.getMainLooper());
-                refresh.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        String text = stock1.getAboutStock();
-                        aboutTextView.setText(text);
-                    }
-                });
+                try {
+                    aboutTextView.setText(stockDatasource.run("https://api-v2.intrinio.com/companies/AAPL?api_key=OjU4YTg3NWY5NDExZmEzMzkxMTlhMzU1YjAwYzNkNDM5"));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
-        });
-        thread.start();*/
+        });*/
 
 
     }

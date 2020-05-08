@@ -35,6 +35,7 @@
 
         </activity>
 
+
         <activity android:name=".sector.HealthCareSector"/>
         <activity android:name=".sector.Technology"/>
         <activity android:name=".sector.RealEstate" />

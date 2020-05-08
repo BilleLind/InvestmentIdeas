@@ -6,20 +6,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
 import java.io.IOException;
-
+import java.util.ArrayList;
 public class LoginActivity extends AppCompatActivity {
 
-    LoginDatabaseHelper db;
-    EditText e1, e2;
-    Button login;
+    private LoginDatabaseHelper db;
     public static MyStockDatabase myStockDatabase;
-    IntrinoAPI intrinoAPI;
+    private EditText e1, e2;
+    private Button login;
+    private StockDatasourceImpl stockDatasource;
+    private ListView loginListView;
+    private ArrayList<Company> companies;
+    private CompanyArrayAdapter adapter;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -27,6 +31,8 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.loginactivity);
         db = new LoginDatabaseHelper(this);
         myStockDatabase = Room.databaseBuilder(getApplicationContext(), MyStockDatabase.class, "stocks").build();
+        loginListView = findViewById(R.id.login_listview);
+        stockDatasource = new StockDatasourceImpl();
 
         e1 = findViewById(R.id.email);
         e2 = findViewById(R.id.password);
@@ -46,14 +52,43 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        adapter = new CompanyArrayAdapter(LoginActivity.this, new ArrayList<Company>());
+        loginListView.setAdapter(adapter);
+        new CompanyListTask(adapter).execute(stockDatasource);
 
-        intrinoAPI =  new IntrinoAPI();
+        /*AsyncTask.execute(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    adapter.addAll(stockDatasource.getCompanyList());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        });*/
+
+
+
+
+        /*AsyncTask.execute(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    System.out.println(stockDatasource.getCompanyList().toString());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });*/
+
+        /*intrinoAPI =  new IntrinoAPI();
         AsyncTask.execute(new Runnable() {
             @Override
             public void run() {
                 intrinoAPI.getStock();
             }
-        });
+        });*/
     }
 
     public void onRegisterClick(View v) {

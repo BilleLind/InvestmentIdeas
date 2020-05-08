@@ -1,12 +1,12 @@
 package com.example.investmentideas;
 
-import com.squareup.okhttp.OkHttpClient;
-
+import java.io.IOException;
 import java.util.ArrayList;
 
 public interface StockDatasource {
-    StockQuote getStockQuote(String id);
-    ArrayList<StockQuote> getStockQuoteList();
+    CompanyDetails getCompanyDetails(String id) throws IOException;
+
+    ArrayList<Company> getCompanyList() throws IOException;
 
 
 
