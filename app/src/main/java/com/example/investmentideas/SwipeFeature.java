@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.investmentideas.sector.BasicMaterials;
 import com.example.investmentideas.sector.CommunicationServices;
 import com.example.investmentideas.sector.ConsumerCyclical;
@@ -23,6 +25,21 @@ public class SwipeFeature extends GestureDetector.SimpleOnGestureListener {
     public Activity getActivity() {
         return activity;
     }
+
+    private float rev16 = 16, rev17 = 17, rev18 = 18, rev19 = 19, rev20 = 20;
+
+    private float net16 = 16, net17 = 17, net18 = 18, net19 = 19, net20 = 20;
+    public void setNet16(float net16) { this.net16 = net16; } public float getNet16() { return net16; }
+    public void setNet17(float net17) { this.net17 = net17; }
+    public void setNet18(float net18) { this.net18 = net18; }
+    public void setNet19(float net19) { this.net19 = net19; }
+    public void setNet20(float net20) { this.net20 = net20; }
+    private String overview = "overview"; String ticker ="ticker"; String company = "company"; String sector = "sector"; String subSector = "subSector";
+    public void setOverview(String overview) { this.overview = overview; }public String getCompany() { return company; }
+    public void setCompany(String company) { this.company = company; } public String getOverview() { return overview; }
+    public void setSector(String sector) { this.sector = sector; } public String getSector() { return sector; }
+    public void setSubSector(String subSector) { this.subSector = subSector; } public String getSubSector() { return subSector; }
+    public void setTicker(String ticker) { this.ticker = ticker; } public String getTicker() { return ticker; }
 
     public void setActivity(Activity activity) {
         this.activity = activity;
@@ -83,34 +100,32 @@ public class SwipeFeature extends GestureDetector.SimpleOnGestureListener {
 
     public boolean switchJob() {
         String currentClass = (activity.getClass().getSimpleName());
-        float rev16 = 16, rev17 = 17, rev18 = 18, rev19 = 19, rev20 = 20;
-        float net16 = 16, net17 = 17, net18 = 18, net19 = 19, net20 = 20;
-        String overview = "overview"; String ticker ="ticker"; String company = "company"; String sector = "sector"; String subSector = "subSector";
+
 
         switch (currentClass) {
-            case "TopStockActivity": TopStockActivity.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+            case "TopStockActivity": TopStockActivity.displayMessage( getOverview(), getTicker(),getCompany(),getSector(),getSubSector(), rev16, rev17, rev18, rev19, rev20,net16, net17, net18, net19, net20  );
                 break;
-            case "ExploreAcitivty":  ExploreAcitivty.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+            case "ExploreAcitivty":  ExploreAcitivty.displayMessage( overview, ticker,company,sector,subSector, rev16, rev17, rev18, rev19, rev20,net16, net17, net18, net19, net20  );
                 break;
-            case  "BasicMaterials": BasicMaterials.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+            case  "BasicMaterials": BasicMaterials.displayMessage( overview, ticker,company,sector,subSector, rev16, rev17, rev18, rev19, rev20,net16, net17, net18, net19, net20  );
                 break;
-            case  "CommunicationServices": CommunicationServices.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+            case  "CommunicationServices": CommunicationServices.displayMessage( overview, ticker,company,sector,subSector, rev16, rev17, rev18, rev19, rev20,net16, net17, net18, net19, net20  );
                 break;
-            case  "ConsumerCyclical": ConsumerCyclical.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+            case  "ConsumerCyclical": ConsumerCyclical.displayMessage( overview, ticker,company,sector,subSector, rev16, rev17, rev18, rev19, rev20,net16, net17, net18, net19, net20  );
                 break;
-            case  "Energy": Energy.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+            case  "Energy": Energy.displayMessage( overview, ticker,company,sector,subSector, rev16, rev17, rev18, rev19, rev20,net16, net17, net18, net19, net20  );
                 break;
-            case  "FinancialServices": FinancialServices.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+            case  "FinancialServices": FinancialServices.displayMessage( overview, ticker,company,sector,subSector, rev16, rev17, rev18, rev19, rev20,net16, net17, net18, net19, net20  );
                 break;
-            case  "HealthCareSector": HealthCareSector.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+            case  "HealthCareSector": HealthCareSector.displayMessage( overview, ticker,company,sector,subSector, rev16, rev17, rev18, rev19, rev20,net16, net17, net18, net19, net20  );
                 break;
-            case  "Industrials": Industrials.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+            case  "Industrials": Industrials.displayMessage( overview, ticker,company,sector,subSector, rev16, rev17, rev18, rev19, rev20,net16, net17, net18, net19, net20  );
                 break;
-            case  "RealEstate": RealEstate.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+            case  "RealEstate": RealEstate.displayMessage( overview, ticker,company,sector,subSector, rev16, rev17, rev18, rev19, rev20,net16, net17, net18, net19, net20  );
                 break;
-            case  "Technology": Technology.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+            case  "Technology": Technology.displayMessage( overview, ticker,company,sector,subSector, rev16, rev17, rev18, rev19, rev20,net16, net17, net18, net19, net20  );
                 break;
-            case "Utilities": Utilities.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+            case "Utilities": Utilities.displayMessage( overview, ticker,company,sector,subSector, rev16, rev17, rev18, rev19, rev20,net16, net17, net18, net19, net20  );
                 break;
         }
         return true;

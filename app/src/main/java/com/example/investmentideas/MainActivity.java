@@ -42,22 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button energy = findViewById(R.id.Energy);
         Button industrial = findViewById(R.id.Industrials);
         Button real = findViewById(R.id.RealEstate);
-
-
-
-        technology = findViewById(R.id.tech);
-        health = findViewById(R.id.healthCare);
-        finacial = findViewById(R.id.financial);
-        cyclical = findViewById(R.id.ConsumerCyclical);
-        basic = findViewById(R.id.BasicMaterials);
-        defensive = findViewById(R.id.ConsumerDefensive);
-        utilities = findViewById(R.id.Utilities);
-        communication = findViewById(R.id.Communication);
-        energy = findViewById(R.id.Energy);
-        industrial = findViewById(R.id.Industrials);
-        real = findViewById(R.id.RealEstate);
-
-
+        Button stock = findViewById(R.id.stockSelector);
 
         technology.setOnClickListener(this);
         health.setOnClickListener(this);
@@ -70,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         energy.setOnClickListener(this);
         industrial.setOnClickListener(this);
         real.setOnClickListener(this);
+        stock.setOnClickListener(this);
     }
 
     @Override
@@ -108,6 +94,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.Industrials:
                 startActivity(new Intent(MainActivity.this, Industrials.class));
                 break;
+            case R.id.stockSelector:
+                startActivity(new Intent(MainActivity.this, StockSelector.class));
         }
     }
 

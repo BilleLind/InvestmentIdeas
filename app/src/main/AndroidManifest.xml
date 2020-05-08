@@ -47,6 +47,7 @@
         <activity android:name=".sector.Industrials" />
         <activity android:name=".sector.ConsumerDefensive" />
         <activity android:name=".sector.Energy" />
+        <activity android:name=".StockSelector" />
 
     </application>
 
