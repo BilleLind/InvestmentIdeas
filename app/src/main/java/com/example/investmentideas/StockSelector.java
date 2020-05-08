@@ -1,27 +1,36 @@
 package com.example.investmentideas;
 
-import android.app.Activity;
-import android.content.res.Resources;
-import android.graphics.drawable.Drawable;
 import android.widget.ImageView;
 
-import androidx.annotation.DrawableRes;
-
-public class StockSelector extends ExploreAcitivty{
-        ImageView imageView = findViewById(R.id.imageExplore);
+public class StockSelector  {
 
 
-    public static void select() {
+    public static boolean selectTop() {
 
-        ExploreAcitivty.tickerExplore.setText("ABC");
-        ExploreAcitivty.companyNameEx.setText("this works");
-        ExploreAcitivty.exploreTextview.setText("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADD");
+        ImageView imageViewEx;
+        String overview="hello", sector="there", subSector="dirt", name="apple", ticker="abc";
+        float rev16=16, rev17=17, rev18=18, rev19=19, rev20=20, net16=16, net17=17, net18=18, net19=19, net20=20;
 
-        ExploreAcitivty.imageExplore.setImageResource(R.drawable.note);
-        //boolean exploreRunning = true;
-        //while (exploreRunning) {
-        //    int i = 0; }
+        boolean moreTopStocks = true;
 
 
+        while (moreTopStocks) {
+            int count=1;
+
+            for (int i = 0; i ==count-1; i++) {
+               TopStockActivity.displayMessage(overview, ticker, name, sector, subSector, rev16+i, rev17, rev18, rev19,rev20,net16,net17,net18,net19,net20);
+            }
+
+
+
+
+            count++;
+        }
+
+
+
+
+
+        return true;
     }
 }

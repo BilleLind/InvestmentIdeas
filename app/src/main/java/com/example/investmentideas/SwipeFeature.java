@@ -4,6 +4,17 @@ import android.app.Activity;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 
+import com.example.investmentideas.sector.BasicMaterials;
+import com.example.investmentideas.sector.CommunicationServices;
+import com.example.investmentideas.sector.ConsumerCyclical;
+import com.example.investmentideas.sector.Energy;
+import com.example.investmentideas.sector.FinancialServices;
+import com.example.investmentideas.sector.HealthCareSector;
+import com.example.investmentideas.sector.Industrials;
+import com.example.investmentideas.sector.RealEstate;
+import com.example.investmentideas.sector.Technology;
+import com.example.investmentideas.sector.Utilities;
+
 public class SwipeFeature extends GestureDetector.SimpleOnGestureListener {
 
 
@@ -13,7 +24,7 @@ public class SwipeFeature extends GestureDetector.SimpleOnGestureListener {
         return activity;
     }
 
-    void setActivity(Activity activity) {
+    public void setActivity(Activity activity) {
         this.activity = activity;
     }
 
@@ -33,25 +44,12 @@ public class SwipeFeature extends GestureDetector.SimpleOnGestureListener {
         int MAX_SWIPE_DISTANCE_X = 1000;
         int MIN_SWIPE_DISTANCE_X = 100;
         if (deltaXAbs >= MIN_SWIPE_DISTANCE_X && deltaXAbs <= MAX_SWIPE_DISTANCE_X) {
-            if (deltaX > 0) { // this is left
-                //TODO make method for going through every stock
-                if (currentClass.equals(explorere)) {
-                    ExploreAcitivty.displayMessage(currentClass + "Works");
-                    //method for ExploreAcitivty
-                }
-                if (currentClass.equals(topStocky)) {
-                    //method for TopstopActivity
-                    TopStockActivity.displayMessage(currentClass + "Works");
-                }
-            } else {
-                if (currentClass.equals(explorere)) {
-                    StockSelector.select();
-                    ExploreAcitivty.displayMessage("Swipe to right");
-                }
 
-                if (currentClass.equals(topStocky)) {
-                    TopStockActivity.displayMessage("Swipe to right");
-                }
+            if (deltaX > 0) { // this is left
+                    switchJob();
+            }
+                else { //this is right
+                    switchJob();
             }
         }
 
@@ -81,6 +79,42 @@ public class SwipeFeature extends GestureDetector.SimpleOnGestureListener {
         this.activity.displayMessage("Double tap");
         return true;
     } */
+
+
+    public boolean switchJob() {
+        String currentClass = (activity.getClass().getSimpleName());
+        float rev16 = 16, rev17 = 17, rev18 = 18, rev19 = 19, rev20 = 20;
+        float net16 = 16, net17 = 17, net18 = 18, net19 = 19, net20 = 20;
+        String overview = "overview"; String ticker ="ticker"; String company = "company"; String sector = "sector"; String subSector = "subSector";
+
+        switch (currentClass) {
+            case "TopStockActivity": TopStockActivity.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+                break;
+            case "ExploreAcitivty":  ExploreAcitivty.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+                break;
+            case  "BasicMaterials": BasicMaterials.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+                break;
+            case  "CommunicationServices": CommunicationServices.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+                break;
+            case  "ConsumerCyclical": ConsumerCyclical.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+                break;
+            case  "Energy": Energy.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+                break;
+            case  "FinancialServices": FinancialServices.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+                break;
+            case  "HealthCareSector": HealthCareSector.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+                break;
+            case  "Industrials": Industrials.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+                break;
+            case  "RealEstate": RealEstate.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+                break;
+            case  "Technology": Technology.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+                break;
+            case "Utilities": Utilities.displayMessage( overview, ticker,company,sector,subSector, 16, 17, 18, 19, 20,16, 17, 18, 19, 20  );
+                break;
+        }
+        return true;
+    }
 
     }
 
